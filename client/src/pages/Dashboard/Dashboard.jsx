@@ -63,7 +63,7 @@ function Dashboard() {
       setLoading(true);
       setError("");
 
-      const res = await API.get("/api/dashboard");
+      const res = await API.get("/dashboard");
 
       const data = res.data?.data || {};
 
