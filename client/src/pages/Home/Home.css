@@ -1,0 +1,209 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#020617;
+}
+
+.home{
+  color:white;
+  min-height:100vh;
+  background:
+  radial-gradient(circle at top,#1e293b,#020617);
+}
+
+/* Navbar */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 8%;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+}
+
+.nav-buttons{
+  display:flex;
+  gap:15px;
+}
+
+.login-btn,
+.signup-btn,
+.primary-btn,
+.secondary-btn{
+
+  text-decoration:none;
+  border-radius:12px;
+  padding:12px 22px;
+  font-weight:600;
+}
+
+.login-btn,
+.secondary-btn{
+  color:white;
+  border:1px solid #475569;
+}
+
+.signup-btn,
+.login-btn,
+.primary-btn{
+
+  background:linear-gradient(
+  135deg,
+  #6366f1,
+  #8b5cf6);
+
+  color:white;
+
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* Hero */
+
+.hero{
+  text-align:center;
+  padding:90px 20px;
+}
+
+.hero h1{
+
+  font-size:64px;
+  line-height:1.1;
+}
+
+.hero p{
+
+  color:#94a3b8;
+  margin:30px auto;
+  max-width:650px;
+  font-size:20px;
+}
+
+.hero-buttons{
+
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+/* Features */
+
+.features{
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+
+  width:90%;
+  margin:70px auto;
+}
+
+.feature-card{
+
+  background:#0f172a;
+  padding:35px;
+  border-radius:18px;
+  text-align:center;
+  transition:.3s;
+}
+
+.feature-card:hover{
+
+  transform:translateY(-8px);
+}
+
+.feature-icon{
+
+  font-size:45px;
+  color:#8b5cf6;
+  margin-bottom:20px;
+}
+
+/* Stats */
+
+.stats{
+
+  display:flex;
+  justify-content:space-evenly;
+  margin:80px 0;
+}
+
+.stats h2{
+
+  font-size:42px;
+  color:#8b5cf6;
+}
+
+.stats p{
+
+  color:#94a3b8;
+}
+
+/* CTA */
+
+.cta{
+
+  text-align:center;
+  margin:100px 0;
+}
+
+.cta h2{
+
+  margin-bottom:30px;
+  font-size:40px;
+}
+
+.cta .primary-btn{
+
+  display:inline-flex;
+}
+
+/* Footer */
+
+footer{
+
+  border-top:1px solid #334155;
+  padding:25px;
+  text-align:center;
+  color:#94a3b8;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.1;
+}
+
+.logo-text h2{
+    margin:0;
+    color:#ffffff;
+    font-size:22px;
+    font-weight:700;
+}
+
+.logo-text span{
+    color:#8b5cf6;;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}

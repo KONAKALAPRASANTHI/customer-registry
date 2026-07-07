@@ -1,0 +1,40 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #0f172a;
+}
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  overflow-x: hidden;
+}
+
+.main-area .navbar {
+  width: 100%;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.page-container {
+  flex: 1;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-area {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-area {
+    padding: 12px;
+  }
+
+  .page-container {
+    width: 100%;
+  }
+}

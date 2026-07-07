@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "./styles/variables.css";
+@import "./styles/animations.css";
+@import "./styles/utilities.css";
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:
+radial-gradient(circle at top left,#1D4ED822 0%,transparent 35%),
+radial-gradient(circle at top right,#7C3AED22 0%,transparent 35%),
+var(--bg-primary);
+
+color:var(--text-primary);
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+}
+
+#root{
+
+min-height:100vh;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+button{
+
+border:none;
+
+outline:none;
+
+font-family:inherit;
+
+cursor:pointer;
+
+}
+
+input,
+textarea,
+select{
+
+font-family:inherit;
+
+outline:none;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#3F3F46;
+
+border-radius:10px;
+
+}
+
+::selection{
+
+background:var(--primary);
+
+color:white;
+
+}
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .dashboard,
+  .customers-page,
+  .profile-page,
+  .settings-page {
+    padding: 20px;
+  }
+
+}

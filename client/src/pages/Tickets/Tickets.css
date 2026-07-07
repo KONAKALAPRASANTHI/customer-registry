@@ -1,0 +1,78 @@
+.tickets-page {
+  padding: 20px;
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+}
+
+/* HEADER */
+.tickets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.tickets-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.tickets-header p {
+  margin-top: 5px;
+  color: #94a3b8;
+}
+
+/* BUTTON */
+.add-ticket-btn {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-ticket-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* LOADING */
+.tickets-loading {
+  color: #cbd5e1;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .tickets-page {
+    padding: 15px;
+  }
+
+  .tickets-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .tickets-header h1 {
+    font-size: 24px;
+  }
+
+  .add-ticket-btn {
+    width: 100%;
+  }
+}
+
+/* =========================
+   TABLE RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .tickets-page {
+    overflow-x: hidden;
+  }
+}

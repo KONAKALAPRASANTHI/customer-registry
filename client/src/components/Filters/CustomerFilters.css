@@ -1,0 +1,39 @@
+.filters{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin:20px 0;
+
+}
+
+.filters input,
+.filters select{
+
+padding:12px 14px;
+
+background:#18181B;
+
+border:1px solid #2d2d33;
+
+color:white;
+
+border-radius:12px;
+
+outline:none;
+
+transition:.2s;
+
+}
+
+.filters input:focus,
+.filters select:focus{
+
+border-color:#6366F1;
+
+box-shadow:0 0 0 4px rgba(99,102,241,.15);
+
+}

@@ -1,0 +1,33 @@
+.toast{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+padding:14px 18px;
+
+border-radius:12px;
+
+color:white;
+
+font-weight:600;
+
+z-index:2000;
+
+animation:fadeIn .3s ease;
+
+}
+
+.toast.success{
+
+background:#22c55e;
+
+}
+
+.toast.error{
+
+background:#ef4444;
+
+}

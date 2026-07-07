@@ -1,0 +1,53 @@
+.input-group{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+margin-bottom:20px;
+
+}
+
+.input-group label{
+
+font-size:14px;
+
+font-weight:600;
+
+color:#D4D4D8;
+
+}
+
+.input-group input{
+
+background:#18181B;
+
+border:1px solid #2d2d33;
+
+color:white;
+
+padding:14px 16px;
+
+border-radius:14px;
+
+font-size:15px;
+
+transition:.3s;
+
+}
+
+.input-group input:focus{
+
+border-color:#6366F1;
+
+box-shadow:0 0 0 4px rgba(99,102,241,.18);
+
+}
+
+.input-group input::placeholder{
+
+color:#71717A;
+
+}

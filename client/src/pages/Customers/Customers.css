@@ -1,0 +1,179 @@
+.customers-page {
+  padding: 30px;
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+}
+
+/* Header */
+
+.customers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.customers-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.customers-header p {
+  color: #94a3b8;
+}
+
+.add-customer-btn {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.add-customer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(139, 92, 246, 0.35);
+}
+
+/* Table Container */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: #1e293b;
+  border-radius: 18px;
+  border: 1px solid #334155;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  color: #cbd5e1;
+  border-bottom: 1px solid #334155;
+}
+
+td {
+  padding: 15px;
+  color: white;
+  border-bottom: 1px solid #334155;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .customers-page {
+    padding: 20px;
+  }
+
+  .customers-header h1 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .customers-page {
+    padding: 15px;
+  }
+
+  .customers-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .add-customer-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .customers-header h1 {
+    font-size: 24px;
+  }
+
+  .customers-header p {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .customers-header h1 {
+    font-size: 22px;
+  }
+
+  .add-customer-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+.customer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.recent-customers,
+.quick-actions {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.recent-customers h2,
+.quick-actions h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Quick Action Buttons */
+
+.quick-actions button {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .customer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .recent-customers,
+  .quick-actions {
+    padding: 18px;
+  }
+
+  .recent-customers h2,
+  .quick-actions h2 {
+    font-size: 18px;
+  }
+}
