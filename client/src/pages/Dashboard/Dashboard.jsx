@@ -46,6 +46,7 @@ function Dashboard() {
 
   useEffect(() => {
 
+    console.log("Dashboard component loaded");
     loadDashboard();
 
     const timer = setInterval(() => {
@@ -58,6 +59,11 @@ function Dashboard() {
 
   const loadDashboard = async()=>{
 
+    
+
+    console.log("Calling dashboard API");
+
+ 
     try{
 
       setLoading(true);
