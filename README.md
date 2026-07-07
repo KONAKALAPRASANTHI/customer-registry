@@ -1,10 +1,10 @@
-# 🛡️ Customer Care Registry
+#  Customer Care Registry
 
 A modern **Customer Care Management System** built using the MERN stack to efficiently manage customer records, support tickets, and analytics. The application provides a clean and responsive dashboard for tracking customer status, ticket priorities, and overall service performance.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - 👤 Customer Management (Add, Edit, Delete, Search)
 - 🎫 Ticket Management
@@ -78,7 +78,7 @@ This project uses **Clerk Authentication** to provide secure user login and sess
 
 ---
 
-## 📱 Responsive Design
+##  Responsive Design
 
 The application is optimized for:
 
@@ -88,7 +88,7 @@ The application is optimized for:
 
 ---
 
-## 👩‍💻 Developed By
+##  Developed By
 
 **Prasanthi Konakala**
  
