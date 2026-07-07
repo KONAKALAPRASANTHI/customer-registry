@@ -23,11 +23,12 @@ connectDB();
 app.use(helmet());
 app.use(morgan("dev"));
 
-// ✅ FIXED CORS (handles 5173 / 5174 / 5175)
+ 
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175",
+  "https://customer-registry-ftd2.onrender.com",
 ];
 
 app.use(
