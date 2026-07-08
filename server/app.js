@@ -28,7 +28,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175",
-  "https://customer-registry-cl.onrender.com/",
+  "https://customer-registry-cl.onrender.com",
 ];
 
 app.use(
