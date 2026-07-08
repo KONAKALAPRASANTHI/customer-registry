@@ -53,7 +53,7 @@ function Analytics() {
   useEffect(() => {
     const fetchAnalytics = async () => {
       try {
-        const res = await API.get("/api/analytics");
+        const res = await API.get("/analytics");
         setData(res.data);
       } catch (err) {
         console.log(err);
