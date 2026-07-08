@@ -13,17 +13,15 @@ import Settings from "./pages/Settings/Settings";
 function App() {
   return (
     <Routes>
-      {/* Landing Page */}
       <Route path="/" element={<Home />} />
 
-      {/* Dashboard */}
-      <Route path="/" element={<DashboardLayout />}>
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="customers" element={<Customers />} />
-        <Route path="tickets" element={<Tickets />} />
-        <Route path="analytics" element={<Analytics />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="settings" element={<Settings />} />
+      <Route element={<DashboardLayout />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/tickets" element={<Tickets />} />
+        <Route path="/analytics" element={<Analytics />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/settings" element={<Settings />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />
