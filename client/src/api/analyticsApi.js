@@ -5,5 +5,5 @@ const API = axios.create({
 });
 
 export const getAnalytics = () => {
-  return API.get("/api/analytics");
+  return API.get("/analytics");
 };

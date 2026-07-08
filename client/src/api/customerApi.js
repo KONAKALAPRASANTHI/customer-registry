@@ -2,24 +2,24 @@ import API from "./axios";
 
 
 export const getCustomers = async () => {
-  const res = await API.get("/api/customers");
+  const res = await API.get("/customers");
   return res.data;
 };
 
 
 export const addCustomer = async (data) => {
-  const res = await API.post("/api/customers", data);
+  const res = await API.post("/customers", data);
   return res.data;
 };
 
 
 export const updateCustomer = async (id, data) => {
-  const res = await API.put(`/api/customers/${id}`, data);
+  const res = await API.put(`/customers/${id}`, data);
   return res.data;
 };
 
 
 export const deleteCustomer = async (id) => {
-  const res = await API.delete(`/api/customers/${id}`);
+  const res = await API.delete(`/customers/${id}`);
   return res.data;
 };
